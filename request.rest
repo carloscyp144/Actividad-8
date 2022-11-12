@@ -1,0 +1,29 @@
+GET http://localhost:3000/api/inmuebles
+###
+POST http://localhost:3000/api/inmuebles
+Content-Type: application/json
+
+{
+    "piso": 1,
+    "letra": "B",
+    "extension": 123,
+    "numhab": 2,
+    "alquilado": true,
+    "nombre": "Paco",
+    "mail": "pac@gmail.com"
+}
+###
+PUT http://localhost:3000/api/inmuebles/1
+Content-Type: application/json
+
+{
+    "piso": 1,
+    "letra": "B",
+    "extension": 124,
+    "numhab": 2,
+    "alquilado": true,
+    "nombre": "Paco",
+    "mail": "pac@gmail.com"
+}
+###
+DELETE http://localhost:3000/api/inmuebles/1
